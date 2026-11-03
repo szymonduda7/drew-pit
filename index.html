@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DREW-PIT | Meble na wymiar, Werynia k. Kolbuszowej</title>
+<meta name="description" content="DREW-PIT, producent mebli na wymiar w Weryni koło Kolbuszowej. Kuchnie, szafy wnękowe, garderoby, zabudowy przedpokoi, meble RTV i meble do lokali. Werynia 431, tel. 691 076 335.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          plyta: '#ecedea',
+          front: '#fafaf8',
+          grafit: '#222527',
+          'grafit-raised': '#2d3134',
+          'ink-soft': '#4e5552',
+          dab: '#b5814c',
+          'dab-dark': '#835628',
+          'dab-light': '#d9ab79',
+        },
+        fontFamily: {
+          sans: ['"Instrument Sans"', 'sans-serif'],
+          display: ['"Familjen Grotesk"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-plyta text-grafit">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between gap-4">
+    <a href="index.html" class="focus-ring rounded-md font-display font-bold text-lg md:text-xl tracking-tight leading-none whitespace-nowrap">
+      DREW<span class="text-dab-dark">-PIT</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium" aria-label="Główna nawigacja">
+      <a href="uslugi.html" class="nav-link focus-ring">Usługi</a>
+      <a href="#realizacje" class="nav-link focus-ring">Realizacje</a>
+      <a href="#opinie" class="nav-link focus-ring">Opinie</a>
+      <a href="#kontakt" class="nav-link focus-ring">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="tel:691076335" class="btn btn-dark px-5 py-2.5 text-sm">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        <span class="hidden sm:inline">691 076 335</span><span class="sm:hidden">Zadzwoń</span>
+      </a>
+      <button id="menu-toggle" class="md:hidden btn btn-outline w-11 h-11 !p-0" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu md:hidden absolute left-0 right-0 top-full bg-front border-b border-black/10 px-5 py-4" aria-label="Menu mobilne">
+    <ul class="flex flex-col text-lg font-semibold">
+      <li><a href="uslugi.html" class="block py-3 border-b border-black/5">Usługi</a></li>
+      <li><a href="#realizacje" class="block py-3 border-b border-black/5">Realizacje</a></li>
+      <li><a href="#opinie" class="block py-3 border-b border-black/5">Opinie</a></li>
+      <li><a href="#kontakt" class="block py-3">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="relative overflow-hidden pt-28 md:pt-36 pb-16 md:pb-24 px-5 md:px-8">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto grid lg:grid-cols-[1fr_1.05fr] gap-12 lg:gap-16 items-center">
+    <div>
+      <h1 class="heading-xl">Szafy, kuchnie i&nbsp;zabudowy robione <span class="oak-mark">na wymiar</span></h1>
+      <p class="lead mt-6 max-w-xl">Zakład stolarski z&nbsp;Weryni koło Kolbuszowej. Wykonujemy kuchnie, szafy wnękowe, garderoby, zabudowy przedpokoi i&nbsp;meble RTV dopasowane do każdej ściany, wnęki i&nbsp;skosu.</p>
+      <div class="mt-9 flex flex-wrap gap-3">
+        <a href="tel:691076335" class="btn btn-oak px-6 py-4 text-base">
+          <i data-lucide="phone" class="w-5 h-5"></i> Zadzwoń: 691 076 335
+        </a>
+        <a href="#wycena" class="btn btn-outline px-6 py-4 text-base">Darmowa wycena</a>
+      </div>
+      <ul class="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-[0.95rem] text-ink-soft">
+        <li class="flex items-center gap-2"><i data-lucide="thumbs-up" class="w-4 h-4 text-dab-dark"></i><strong class="text-grafit">90%</strong> poleca na Facebooku (8 opinii)</li>
+        <li class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-dab-dark"></i>Pn–Pt 8:00–16:00</li>
+      </ul>
+    </div>
+
+    <div class="collage">
+      <div class="photo collage-main">
+        <img src="images/9.webp" alt="Biała zabudowa przedpokoju z siedziskiem i oparciem w morskim welurze">
+      </div>
+      <div class="photo collage-top">
+        <img src="images/20.webp" alt="Biała kuchnia z półwyspem i frontami górnymi w dekorze dębu">
+      </div>
+      <div class="photo collage-bottom">
+        <img src="images/5.webp" alt="Ściana RTV w dekorze ciemnego drewna z długą białą szafką" style="object-position:50% 55%">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USŁUGI ============ -->
+<section id="uslugi" class="relative py-20 md:py-28 px-5 md:px-8 bg-front border-y border-black/5">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 reveal">
+      <div class="max-w-2xl">
+        <h2 class="heading-lg">Co dla Ciebie zrobimy</h2>
+        <p class="lead mt-4">Od jednej komody po zabudowę całego mieszkania. Każdy mebel powstaje pod konkretne wnętrze, więc nie ma w&nbsp;nim przypadkowych szczelin ani zmarnowanego miejsca.</p>
+      </div>
+      <a href="uslugi.html" class="text-link shrink-0">Wszystkie usługi <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+      <a href="uslugi.html#kuchnie" class="surface card-link p-6 md:p-7 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="cooking-pot" class="w-5 h-5"></i></span>
+        <h3 class="heading-md mt-5">Kuchnie na wymiar</h3>
+        <p class="mt-2 text-ink-soft">Kuchnie w&nbsp;literę L i&nbsp;U, z&nbsp;wyspą lub półwyspem, z&nbsp;zabudową wysoką na lodówkę i&nbsp;piekarniki.</p>
+        <span class="text-link mt-auto pt-5">Zobacz więcej <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+      <a href="uslugi.html#przedpokoje" class="surface card-link p-6 md:p-7 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="armchair" class="w-5 h-5"></i></span>
+        <h3 class="heading-md mt-5">Zabudowy przedpokoi</h3>
+        <p class="mt-2 text-ink-soft">Szafy z&nbsp;tapicerowanym siedziskiem, wieszakami i&nbsp;miejscem na buty, także z&nbsp;lustrzanymi frontami.</p>
+        <span class="text-link mt-auto pt-5">Zobacz więcej <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+      <a href="uslugi.html#szafy" class="surface card-link p-6 md:p-7 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="shirt" class="w-5 h-5"></i></span>
+        <h3 class="heading-md mt-5">Szafy i&nbsp;garderoby</h3>
+        <p class="mt-2 text-ink-soft">Szafy wnękowe od podłogi do sufitu i&nbsp;garderoby z&nbsp;półkami, drążkami oraz szufladami.</p>
+        <span class="text-link mt-auto pt-5">Zobacz więcej <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+      <a href="uslugi.html#pokojowe" class="surface card-link p-6 md:p-7 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="tv" class="w-5 h-5"></i></span>
+        <h3 class="heading-md mt-5">Meble RTV i&nbsp;pokojowe</h3>
+        <p class="mt-2 text-ink-soft">Ściany telewizyjne, regały na całą ścianę, szafki RTV i&nbsp;komody do salonu oraz sypialni.</p>
+        <span class="text-link mt-auto pt-5">Zobacz więcej <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+      <a href="uslugi.html#lokale" class="surface card-link p-6 md:p-7 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="store" class="w-5 h-5"></i></span>
+        <h3 class="heading-md mt-5">Meble do lokali i&nbsp;biur</h3>
+        <p class="mt-2 text-ink-soft">Loże z&nbsp;siedziskami do restauracji, kuchnie socjalne i&nbsp;zabudowy w&nbsp;biurach.</p>
+        <span class="text-link mt-auto pt-5">Zobacz więcej <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+      <a href="uslugi.html#pomiar" class="surface card-link p-6 md:p-7 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="ruler" class="w-5 h-5"></i></span>
+        <h3 class="heading-md mt-5">Pomiar, projekt i&nbsp;montaż</h3>
+        <p class="mt-2 text-ink-soft">Mierzymy pomieszczenie, ustalamy z&nbsp;Tobą układ i&nbsp;materiały, a&nbsp;gotowe meble montujemy na miejscu.</p>
+        <span class="text-link mt-auto pt-5">Zobacz więcej <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DLACZEGO MY ============ -->
+<section class="relative py-20 md:py-28 px-5 md:px-8">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-16 items-center">
+    <div class="photo aspect-[4/5] lg:aspect-[4/4.6] reveal">
+      <img src="images/10.webp" alt="Zabudowa korytarza z lustrzanymi frontami i siedziskiem" loading="lazy">
+    </div>
+    <div>
+      <h2 class="heading-lg reveal">Za co klienci nas polecają</h2>
+      <p class="lead mt-4 reveal">Dziewięć na dziesięć osób, które oceniły nas na Facebooku, poleca DREW-PIT innym. Oto, na co mogą liczyć.</p>
+      <div class="mt-10 grid sm:grid-cols-2 gap-x-8 gap-y-9">
+        <div class="reveal">
+          <i data-lucide="warehouse" class="w-6 h-6 text-dab-dark"></i>
+          <h3 class="font-display font-bold text-xl mt-3 tracking-tight">Własny zakład</h3>
+          <p class="mt-2 text-ink-soft">Meble powstają w&nbsp;naszej stolarni w&nbsp;Weryni. Rozmawiasz z&nbsp;tymi, którzy je robią, bez pośredników.</p>
+        </div>
+        <div class="reveal">
+          <i data-lucide="ruler" class="w-6 h-6 text-dab-dark"></i>
+          <h3 class="font-display font-bold text-xl mt-3 tracking-tight">Co do centymetra</h3>
+          <p class="mt-2 text-ink-soft">Szafy dochodzą do sufitu i&nbsp;wypełniają wnękę od ściany do ściany, więc nic nie zbiera kurzu nad szafą.</p>
+        </div>
+        <div class="reveal">
+          <i data-lucide="lamp" class="w-6 h-6 text-dab-dark"></i>
+          <h3 class="font-display font-bold text-xl mt-3 tracking-tight">Dopracowane detale</h3>
+          <p class="mt-2 text-ink-soft">Tapicerowane siedziska, lustrzane fronty, podświetlenie LED i&nbsp;fronty bez uchwytów tam, gdzie pasują.</p>
+        </div>
+        <div class="reveal">
+          <i data-lucide="house" class="w-6 h-6 text-dab-dark"></i>
+          <h3 class="font-display font-bold text-xl mt-3 tracking-tight">Całe mieszkanie</h3>
+          <p class="mt-2 text-ink-soft">Kuchnia, przedpokój, szafy i&nbsp;salon od jednego wykonawcy, w&nbsp;spójnych kolorach i&nbsp;materiałach.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WYCENA ============ -->
+<section id="wycena" class="relative bg-grafit text-front on-dark overflow-hidden">
+  <div class="grain"></div>
+  <div class="wood h-3 w-full" aria-hidden="true"></div>
+  <div class="relative max-w-7xl mx-auto px-5 md:px-8 py-20 md:py-24 grid lg:grid-cols-[1.2fr_1fr] gap-10 items-center">
+    <div class="reveal">
+      <h2 class="heading-lg">Masz wnękę albo pustą ścianę? <span class="text-dab-light">Wycenimy meble za darmo.</span></h2>
+      <p class="lead mt-5 max-w-2xl">Zadzwoń i&nbsp;opowiedz, czego potrzebujesz. Wymiary, szkic albo zdjęcie pomieszczenia wystarczą, żeby zacząć. Wycena do niczego nie zobowiązuje.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-end reveal">
+      <a href="tel:691076335" class="btn btn-oak px-7 py-4 text-base"><i data-lucide="phone" class="w-5 h-5"></i> 691 076 335</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Werynia+431,+36-100+Kolbuszowa" target="_blank" rel="noopener" class="btn btn-outline px-7 py-4 text-base"><i data-lucide="map-pin" class="w-5 h-5"></i> Przyjedź do zakładu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REALIZACJE ============ -->
+<section id="realizacje" class="py-20 md:py-28 px-5 md:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 reveal">
+      <div class="max-w-2xl">
+        <h2 class="heading-lg">Realizacje</h2>
+        <p class="lead mt-4">Kuchnie, zabudowy przedpokoi, szafy i&nbsp;meble do salonu zamontowane u&nbsp;naszych klientów. Kliknij zdjęcie, żeby je powiększyć.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <button type="button" class="gallery-item" data-full="images/9.webp" data-caption="Zabudowa przedpokoju z siedziskiem w morskim welurze" aria-label="Powiększ: Zabudowa przedpokoju z siedziskiem w morskim welurze"><img src="images/9.webp" alt="Zabudowa przedpokoju z siedziskiem w morskim welurze" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/20.webp" data-caption="Biała kuchnia z półwyspem i frontami w dekorze dębu" aria-label="Powiększ: Biała kuchnia z półwyspem i frontami w dekorze dębu"><img src="images/20.webp" alt="Biała kuchnia z półwyspem i frontami w dekorze dębu" width="960" height="720" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/1.webp" data-caption="Biała zabudowa przedpokoju z szarym tapicerowanym siedziskiem" aria-label="Powiększ: Biała zabudowa przedpokoju z szarym tapicerowanym siedziskiem"><img src="images/1.webp" alt="Biała zabudowa przedpokoju z szarym tapicerowanym siedziskiem" width="1078" height="1440" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/5.webp" data-caption="Ściana RTV w dekorze drewna z białą szafką" aria-label="Powiększ: Ściana RTV w dekorze drewna z białą szafką"><img src="images/5.webp" alt="Ściana RTV w dekorze drewna z białą szafką" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/22.webp" data-caption="Kuchnia w literę U na wysoki połysk z podświetleniem" aria-label="Powiększ: Kuchnia w literę U na wysoki połysk z podświetleniem"><img src="images/22.webp" alt="Kuchnia w literę U na wysoki połysk z podświetleniem" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/10.webp" data-caption="Zabudowa korytarza z lustrzanymi frontami" aria-label="Powiększ: Zabudowa korytarza z lustrzanymi frontami"><img src="images/10.webp" alt="Zabudowa korytarza z lustrzanymi frontami" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/18.webp" data-caption="Biała kuchnia z zabudową wysoką i frontami w dębie" aria-label="Powiększ: Biała kuchnia z zabudową wysoką i frontami w dębie"><img src="images/18.webp" alt="Biała kuchnia z zabudową wysoką i frontami w dębie" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/15.webp" data-caption="Garderoba z półkami, drążkiem i szufladami" aria-label="Powiększ: Garderoba z półkami, drążkiem i szufladami"><img src="images/15.webp" alt="Garderoba z półkami, drążkiem i szufladami" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/23.webp" data-caption="Regał z półkami wokół telewizora i przejścia" aria-label="Powiększ: Regał z półkami wokół telewizora i przejścia"><img src="images/23.webp" alt="Regał z półkami wokół telewizora i przejścia" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/21.webp" data-caption="Biała kuchnia w literę L z czarnym szkłem nad blatem" aria-label="Powiększ: Biała kuchnia w literę L z czarnym szkłem nad blatem"><img src="images/21.webp" alt="Biała kuchnia w literę L z czarnym szkłem nad blatem" width="960" height="720" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/6.webp" data-caption="Szafka w przedpokoju z pionowym pasem LED" aria-label="Powiększ: Szafka w przedpokoju z pionowym pasem LED"><img src="images/6.webp" alt="Szafka w przedpokoju z pionowym pasem LED" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/8.webp" data-caption="Loża z siedziskami i stołem do lokalu" aria-label="Powiększ: Loża z siedziskami i stołem do lokalu"><img src="images/8.webp" alt="Loża z siedziskami i stołem do lokalu" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item is-hidden" data-full="images/2.webp" data-caption="Zabudowa przedpokoju z podświetlanymi półkami" aria-label="Powiększ: Zabudowa przedpokoju z podświetlanymi półkami"><img src="images/2.webp" alt="Zabudowa przedpokoju z podświetlanymi półkami" width="1078" height="1440" loading="lazy"></button>
+      <button type="button" class="gallery-item is-hidden" data-full="images/19.webp" data-caption="Kuchnia z wyspą i słupkiem na piekarniki" aria-label="Powiększ: Kuchnia z wyspą i słupkiem na piekarniki"><img src="images/19.webp" alt="Kuchnia z wyspą i słupkiem na piekarniki" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item is-hidden" data-full="images/11.webp" data-caption="Szafa od podłogi do sufitu w sypialni" aria-label="Powiększ: Szafa od podłogi do sufitu w sypialni"><img src="images/11.webp" alt="Szafa od podłogi do sufitu w sypialni" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item is-hidden" data-full="images/17.webp" data-caption="Salon z regałem i szafkami RTV" aria-label="Powiększ: Salon z regałem i szafkami RTV"><img src="images/17.webp" alt="Salon z regałem i szafkami RTV" width="960" height="720" loading="lazy"></button>
+      <button type="button" class="gallery-item is-hidden" data-full="images/3.webp" data-caption="Biała kuchnia na wysoki połysk z zabudową wysoką" aria-label="Powiększ: Biała kuchnia na wysoki połysk z zabudową wysoką"><img src="images/3.webp" alt="Biała kuchnia na wysoki połysk z zabudową wysoką" width="639" height="639" loading="lazy"></button>
+      <button type="button" class="gallery-item is-hidden" data-full="images/13.webp" data-caption="Szafa wnękowa z frontami do sufitu" aria-label="Powiększ: Szafa wnękowa z frontami do sufitu"><img src="images/13.webp" alt="Szafa wnękowa z frontami do sufitu" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item is-hidden" data-full="images/14.webp" data-caption="Wnętrze garderoby w dekorze jasnego drewna" aria-label="Powiększ: Wnętrze garderoby w dekorze jasnego drewna"><img src="images/14.webp" alt="Wnętrze garderoby w dekorze jasnego drewna" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item is-hidden" data-full="images/16.webp" data-caption="Biała szafa wnękowa z frontami bez uchwytów" aria-label="Powiększ: Biała szafa wnękowa z frontami bez uchwytów"><img src="images/16.webp" alt="Biała szafa wnękowa z frontami bez uchwytów" width="960" height="720" loading="lazy"></button>
+      <button type="button" class="gallery-item is-hidden" data-full="images/4.webp" data-caption="Komoda z frontami ramkowymi" aria-label="Powiększ: Komoda z frontami ramkowymi"><img src="images/4.webp" alt="Komoda z frontami ramkowymi" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item is-hidden" data-full="images/7.webp" data-caption="Kuchnia socjalna w biurze" aria-label="Powiększ: Kuchnia socjalna w biurze"><img src="images/7.webp" alt="Kuchnia socjalna w biurze" width="720" height="960" loading="lazy"></button>
+      <button type="button" class="gallery-item is-hidden" data-full="images/12.webp" data-caption="Biała zabudowa wysoka w przedpokoju" aria-label="Powiększ: Biała zabudowa wysoka w przedpokoju"><img src="images/12.webp" alt="Biała zabudowa wysoka w przedpokoju" width="720" height="960" loading="lazy"></button>
+    </div>
+    <div class="mt-10 text-center">
+      <button id="gallery-more" class="btn btn-outline px-7 py-3.5">Pokaż wszystkie zdjęcia <i data-lucide="chevron-down" class="w-4 h-4"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPINIE ============ -->
+<section id="opinie" class="relative bg-grafit text-front on-dark py-20 md:py-28 px-5 md:px-8 overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
+    <div class="reveal">
+      <h2 class="heading-lg">Co mówią klienci</h2>
+      <p class="lead mt-4 max-w-xl">Klienci oceniają nas na Facebooku. Jeśli zamawiałeś u&nbsp;nas meble, Twoja opinia pomoże innym w&nbsp;wyborze stolarza.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="tel:691076335" class="btn btn-oak px-6 py-3.5"><i data-lucide="phone" class="w-5 h-5"></i> Zadzwoń po wycenę</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=DREW-PIT+Meble+na+wymiar+Werynia+431" target="_blank" rel="noopener" class="btn btn-outline px-6 py-3.5"><i data-lucide="message-square" class="w-5 h-5"></i> Oceń nas w&nbsp;Google</a>
+      </div>
+    </div>
+    <div class="review !mb-0 p-8 md:p-10 reveal">
+      <div class="flex items-end gap-5">
+        <span class="font-display font-bold text-7xl md:text-8xl tracking-tight leading-none">90%</span>
+        <i data-lucide="thumbs-up" class="w-9 h-9 text-dab-light mb-2"></i>
+      </div>
+      <p class="mt-4 text-lg">osób, które wystawiły opinię na Facebooku, poleca DREW-PIT.</p>
+      <p class="mt-2 text-sm text-[#b9bdbb]">Na podstawie 8 opinii</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section id="kontakt" class="py-20 md:py-28 px-5 md:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-12 reveal">
+      <h2 class="heading-lg">Porozmawiajmy o&nbsp;Twoich meblach</h2>
+      <p class="lead mt-4">Najszybciej złapiesz nas telefonicznie w&nbsp;godzinach pracy. Zakład znajdziesz w&nbsp;Weryni, kilka minut od Kolbuszowej.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-[1fr_1.25fr] gap-5">
+      <div class="surface p-6 md:p-8 reveal">
+        <ul class="space-y-6">
+          <li>
+            <a href="tel:691076335" class="group flex items-start gap-4 rounded-md focus-ring">
+              <span class="icon-chip shrink-0"><i data-lucide="phone" class="w-5 h-5"></i></span>
+              <span><span class="block text-sm text-ink-soft">Telefon</span><span class="block font-display font-bold text-2xl tracking-tight group-hover:text-dab-dark transition-colors">691 076 335</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Werynia+431,+36-100+Kolbuszowa" target="_blank" rel="noopener" class="group flex items-start gap-4 rounded-md focus-ring">
+              <span class="icon-chip shrink-0"><i data-lucide="map-pin" class="w-5 h-5"></i></span>
+              <span><span class="block text-sm text-ink-soft">Adres zakładu</span><span class="block font-semibold text-lg group-hover:text-dab-dark transition-colors">Werynia 431, 36-100 Kolbuszowa</span><span class="block text-sm text-dab-dark font-semibold mt-1">Wyznacz trasę</span></span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="mt-8 pt-6 border-t border-black/10">
+          <h3 class="font-display font-bold text-lg tracking-tight flex items-center gap-2"><i data-lucide="clock" class="w-5 h-5 text-dab-dark"></i>Godziny pracy</h3>
+          <div class="mt-3 text-[0.98rem]">
+            <div class="hours-row" data-day="1"><span>Poniedziałek</span><span>8:00–16:00</span></div>
+            <div class="hours-row" data-day="2"><span>Wtorek</span><span>8:00–16:00</span></div>
+            <div class="hours-row" data-day="3"><span>Środa</span><span>8:00–16:00</span></div>
+            <div class="hours-row" data-day="4"><span>Czwartek</span><span>8:00–16:00</span></div>
+            <div class="hours-row" data-day="5"><span>Piątek</span><span>8:00–16:00</span></div>
+            <div class="hours-row" data-day="6"><span>Sobota</span><span>Zamknięte</span></div>
+            <div class="hours-row" data-day="0"><span>Niedziela</span><span>Zamknięte</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="photo min-h-[340px] lg:min-h-0 reveal">
+        <iframe title="Mapa dojazdu: Werynia 431, Kolbuszowa" src="https://maps.google.com/maps?q=Werynia%20431%2C%2036-100%20Kolbuszowa&z=14&output=embed" class="w-full h-full min-h-[340px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-grafit text-[#b9bdbb] on-dark">
+  <div class="wood h-2 w-full" aria-hidden="true"></div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-12 grid md:grid-cols-3 gap-8 text-[0.95rem]">
+    <div>
+      <p class="font-display font-bold text-xl text-front tracking-tight">DREW<span class="text-dab-light">-PIT</span></p>
+      <p class="mt-2">Meble na wymiar z&nbsp;Weryni koło Kolbuszowej.</p>
+    </div>
+    <div>
+      <p class="text-front font-semibold">Kontakt</p>
+      <p class="mt-2"><a href="tel:691076335" class="hover:text-dab-light transition-colors">691 076 335</a><br>Werynia 431, 36-100 Kolbuszowa<br>Pn–Pt 8:00–16:00</p>
+    </div>
+    <div>
+      <p class="text-front font-semibold">Strona</p>
+      <p class="mt-2 flex flex-col gap-1">
+        <a href="uslugi.html" class="hover:text-dab-light transition-colors w-fit">Usługi</a>
+        <a href="#realizacje" class="hover:text-dab-light transition-colors w-fit">Realizacje</a>
+        <a href="#opinie" class="hover:text-dab-light transition-colors w-fit">Opinie</a>
+      </p>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <p class="max-w-7xl mx-auto px-5 md:px-8 py-5 text-sm">© <span id="year">2026</span> DREW-PIT, Werynia</p>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+  <button id="lb-close" class="lb-btn top-4 right-4" aria-label="Zamknij"><i data-lucide="x" class="w-5 h-5"></i></button>
+  <button id="lb-prev" class="lb-btn left-3 md:left-6 top-[calc(50%-1.5rem)]" aria-label="Poprzednie zdjęcie"><i data-lucide="chevron-left" class="w-5 h-5"></i></button>
+  <button id="lb-next" class="lb-btn right-3 md:right-6 top-[calc(50%-1.5rem)]" aria-label="Następne zdjęcie"><i data-lucide="chevron-right" class="w-5 h-5"></i></button>
+  <figure>
+    <img id="lb-img" src="" alt="">
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+</div>
+
+<script src="main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

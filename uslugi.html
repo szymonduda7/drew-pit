@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usługi | DREW-PIT, meble na wymiar Kolbuszowa</title>
+<meta name="description" content="Kuchnie na wymiar, zabudowy przedpokoi, szafy wnękowe i garderoby, meble RTV i pokojowe, meble do lokali i biur. DREW-PIT, Werynia k. Kolbuszowej, tel. 691 076 335.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          plyta: '#ecedea',
+          front: '#fafaf8',
+          grafit: '#222527',
+          'grafit-raised': '#2d3134',
+          'ink-soft': '#4e5552',
+          dab: '#b5814c',
+          'dab-dark': '#835628',
+          'dab-light': '#d9ab79',
+        },
+        fontFamily: {
+          sans: ['"Instrument Sans"', 'sans-serif'],
+          display: ['"Familjen Grotesk"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-plyta text-grafit">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between gap-4">
+    <a href="index.html" class="focus-ring rounded-md font-display font-bold text-lg md:text-xl tracking-tight leading-none whitespace-nowrap">
+      DREW<span class="text-dab-dark">-PIT</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium" aria-label="Główna nawigacja">
+      <a href="uslugi.html" class="nav-link focus-ring" aria-current="page">Usługi</a>
+      <a href="index.html#realizacje" class="nav-link focus-ring">Realizacje</a>
+      <a href="index.html#opinie" class="nav-link focus-ring">Opinie</a>
+      <a href="index.html#kontakt" class="nav-link focus-ring">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="tel:691076335" class="btn btn-dark px-5 py-2.5 text-sm">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        <span class="hidden sm:inline">691 076 335</span><span class="sm:hidden">Zadzwoń</span>
+      </a>
+      <button id="menu-toggle" class="md:hidden btn btn-outline w-11 h-11 !p-0" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu md:hidden absolute left-0 right-0 top-full bg-front border-b border-black/10 px-5 py-4" aria-label="Menu mobilne">
+    <ul class="flex flex-col text-lg font-semibold">
+      <li><a href="uslugi.html" class="block py-3 border-b border-black/5 text-dab-dark">Usługi</a></li>
+      <li><a href="index.html#realizacje" class="block py-3 border-b border-black/5">Realizacje</a></li>
+      <li><a href="index.html#opinie" class="block py-3 border-b border-black/5">Opinie</a></li>
+      <li><a href="index.html#kontakt" class="block py-3">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- ============ INTRO ============ -->
+<section class="relative overflow-hidden pt-28 md:pt-36 pb-12 md:pb-16 px-5 md:px-8">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <a href="index.html" class="text-link text-sm"><i data-lucide="arrow-left" class="w-4 h-4"></i> Strona główna</a>
+    <h1 class="heading-xl mt-6 max-w-4xl">Meble na wymiar do <span class="oak-mark">każdego pomieszczenia</span></h1>
+    <p class="lead mt-6 max-w-2xl">Kuchnia, przedpokój, sypialnia, salon albo lokal usługowy. Każdy mebel robimy pod konkretne wnętrze: od pomiaru, przez wybór płyt, frontów i&nbsp;okuć, po montaż na miejscu.</p>
+    <nav class="mt-9 flex flex-wrap gap-2" aria-label="Spis usług">
+      <a href="#kuchnie" class="btn btn-outline px-4 py-2 text-sm">Kuchnie</a>
+      <a href="#przedpokoje" class="btn btn-outline px-4 py-2 text-sm">Przedpokoje</a>
+      <a href="#szafy" class="btn btn-outline px-4 py-2 text-sm">Szafy i garderoby</a>
+      <a href="#pokojowe" class="btn btn-outline px-4 py-2 text-sm">RTV i pokojowe</a>
+      <a href="#lokale" class="btn btn-outline px-4 py-2 text-sm">Lokale i biura</a>
+      <a href="#pomiar" class="btn btn-outline px-4 py-2 text-sm">Pomiar i montaż</a>
+    </nav>
+  </div>
+</section>
+
+<!-- ============ KARTY USŁUG ============ -->
+<section class="pb-20 md:pb-28 px-5 md:px-8">
+  <div class="max-w-7xl mx-auto flex flex-col gap-5 md:gap-6">
+
+    <article id="kuchnie" class="surface overflow-hidden grid lg:grid-cols-2 reveal">
+      <div class="aspect-[4/3] lg:aspect-auto lg:min-h-[460px] overflow-hidden bg-[#d5d6d2]">
+        <img src="images/20.webp" alt="Biała kuchnia z półwyspem, słupkiem na piekarniki i frontami górnymi w dekorze dębu" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="p-7 md:p-10 lg:p-12 flex flex-col">
+        <span class="icon-chip"><i data-lucide="cooking-pot" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Kuchnie na wymiar</h2>
+        <p class="mt-4 text-ink-soft text-lg">Planujemy kuchnię pod Twoje AGD, okno i&nbsp;instalacje, żeby każdy centymetr ściany był wykorzystany, a&nbsp;szafki sięgały aż do sufitu.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Kuchnie w&nbsp;literę L, U i&nbsp;jednorzędowe</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Wyspy i&nbsp;półwyspy</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Słupki na lodówkę i&nbsp;piekarniki</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Fronty na wysoki połysk i&nbsp;matowe</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Łączenie bieli z&nbsp;dekorem drewna</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Podświetlenie LED nad blatem</li>
+        </ul>
+        <a href="index.html#realizacje" class="text-link mt-auto pt-8">Zobacz kuchnie w&nbsp;realizacjach <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+    </article>
+
+    <article id="przedpokoje" class="surface overflow-hidden grid lg:grid-cols-2 reveal">
+      <div class="aspect-[4/3] lg:aspect-auto lg:min-h-[460px] overflow-hidden bg-[#d5d6d2] lg:order-2">
+        <img src="images/1.webp" alt="Biała zabudowa przedpokoju z szafami do sufitu i szarym tapicerowanym siedziskiem" class="w-full h-full object-cover" style="object-position:50% 40%" loading="lazy">
+      </div>
+      <div class="p-7 md:p-10 lg:p-12 flex flex-col">
+        <span class="icon-chip"><i data-lucide="armchair" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Zabudowy przedpokoi</h2>
+        <p class="mt-4 text-ink-soft text-lg">Przedpokój to pierwsze, co widzą goście. Robimy zabudowy, w&nbsp;których kurtki, buty i&nbsp;torby mają swoje miejsce, a&nbsp;wygodne siedzisko ułatwia ubieranie.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Siedziska z&nbsp;tapicerowanym oparciem</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Szafy od podłogi do sufitu</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Fronty lustrzane</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Podświetlane półki i&nbsp;pasy LED</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Szafki na buty</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Fronty frezowane i&nbsp;gładkie</li>
+        </ul>
+        <a href="index.html#realizacje" class="text-link mt-auto pt-8">Zobacz przedpokoje w&nbsp;realizacjach <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+    </article>
+
+    <article id="szafy" class="surface overflow-hidden grid lg:grid-cols-2 reveal">
+      <div class="aspect-[4/3] lg:aspect-auto lg:min-h-[460px] overflow-hidden bg-[#d5d6d2]">
+        <img src="images/15.webp" alt="Garderoba z półkami, drążkiem na ubrania i szufladami" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="p-7 md:p-10 lg:p-12 flex flex-col">
+        <span class="icon-chip"><i data-lucide="shirt" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Szafy wnękowe i&nbsp;garderoby</h2>
+        <p class="mt-4 text-ink-soft text-lg">Szafa dopasowana do wnęki zamyka całą ścianę i&nbsp;mieści znacznie więcej niż gotowy mebel. Wnętrze układamy pod to, co będziesz w&nbsp;niej trzymać.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Szafy wnękowe do sufitu</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Garderoby otwarte i&nbsp;zamykane</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Półki, drążki i&nbsp;szuflady</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Fronty bez uchwytów</li>
+        </ul>
+        <a href="index.html#realizacje" class="text-link mt-auto pt-8">Zobacz szafy w&nbsp;realizacjach <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+    </article>
+
+    <article id="pokojowe" class="surface overflow-hidden grid lg:grid-cols-2 reveal">
+      <div class="aspect-[4/3] lg:aspect-auto lg:min-h-[460px] overflow-hidden bg-[#d5d6d2] lg:order-2">
+        <img src="images/23.webp" alt="Biały regał z półkami wokół telewizora i przejścia do sąsiedniego pokoju" class="w-full h-full object-cover" style="object-position:50% 35%" loading="lazy">
+      </div>
+      <div class="p-7 md:p-10 lg:p-12 flex flex-col">
+        <span class="icon-chip"><i data-lucide="tv" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Meble RTV i&nbsp;pokojowe</h2>
+        <p class="mt-4 text-ink-soft text-lg">Salon, sypialnia i&nbsp;pokój dziecka. Robimy pojedyncze meble albo zabudowę całej ściany, z&nbsp;miejscem na telewizor, książki i&nbsp;sprzęt.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Ściany RTV z&nbsp;panelem</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Długie szafki RTV</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Regały na całą ścianę</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Komody i&nbsp;szafki</li>
+        </ul>
+        <a href="index.html#realizacje" class="text-link mt-auto pt-8">Zobacz meble w&nbsp;realizacjach <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+    </article>
+
+    <article id="lokale" class="surface overflow-hidden grid lg:grid-cols-2 reveal">
+      <div class="aspect-[4/3] lg:aspect-auto lg:min-h-[460px] overflow-hidden bg-[#d5d6d2]">
+        <img src="images/8.webp" alt="Loża z siedziskami i stołem w dekorze szarego drewna przygotowana do lokalu" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="p-7 md:p-10 lg:p-12 flex flex-col">
+        <span class="icon-chip"><i data-lucide="store" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Meble do lokali i&nbsp;biur</h2>
+        <p class="mt-4 text-ink-soft text-lg">Wyposażenie restauracji, kawiarni i&nbsp;biur dopasowane do wymiarów lokalu. Meble, które wytrzymają codzienne użytkowanie przez wiele osób.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Loże i&nbsp;siedziska ze stołami</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Kuchnie socjalne</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Szafy i&nbsp;zabudowy biurowe</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Blaty i&nbsp;stoliki składane</li>
+        </ul>
+      </div>
+    </article>
+
+    <div id="pomiar" class="grid lg:grid-cols-2 gap-5 md:gap-6">
+      <article class="surface p-7 md:p-10 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="ruler" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Pomiar i&nbsp;projekt</h2>
+        <p class="mt-4 text-ink-soft text-lg">Zanim cokolwiek wytniemy, mierzymy pomieszczenie i&nbsp;ustalamy z&nbsp;Tobą układ, kolory i&nbsp;okucia.</p>
+        <ul class="mt-6 space-y-2.5">
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Pomiar u&nbsp;klienta</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Dobór płyt, frontów i&nbsp;uchwytów</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Wycena przed rozpoczęciem prac</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Możesz przyjść z&nbsp;własnym projektem</li>
+        </ul>
+      </article>
+
+      <article class="surface p-7 md:p-10 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="wrench" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Transport i&nbsp;montaż</h2>
+        <p class="mt-4 text-ink-soft text-lg">Gotowe meble przywozimy i&nbsp;składamy na miejscu, dopasowując je do ścian i&nbsp;podłogi.</p>
+        <ul class="mt-6 space-y-2.5">
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Dowóz z&nbsp;zakładu w&nbsp;Weryni</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Montaż i&nbsp;regulacja frontów</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Podłączenie oświetlenia LED</li>
+          <li class="flex gap-2.5"><i data-lucide="check" class="w-5 h-5 text-dab-dark shrink-0 mt-0.5"></i>Kolbuszowa i&nbsp;okolice</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="relative bg-grafit text-front on-dark overflow-hidden">
+  <div class="grain"></div>
+  <div class="wood h-3 w-full" aria-hidden="true"></div>
+  <div class="relative max-w-7xl mx-auto px-5 md:px-8 py-20 md:py-24 grid lg:grid-cols-[1.2fr_1fr] gap-10 items-center">
+    <div class="reveal">
+      <h2 class="heading-lg">Powiedz, czego potrzebujesz. <span class="text-dab-light">Wycena jest darmowa.</span></h2>
+      <p class="lead mt-5 max-w-2xl">Zadzwoń od poniedziałku do piątku w&nbsp;godzinach 8:00–16:00 albo przyjedź do zakładu w&nbsp;Weryni. Wymiary i&nbsp;zdjęcie pomieszczenia wystarczą na początek.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-end reveal">
+      <a href="tel:691076335" class="btn btn-oak px-7 py-4 text-base"><i data-lucide="phone" class="w-5 h-5"></i> 691 076 335</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Werynia+431,+36-100+Kolbuszowa" target="_blank" rel="noopener" class="btn btn-outline px-7 py-4 text-base"><i data-lucide="map-pin" class="w-5 h-5"></i> Werynia 431, Kolbuszowa</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-grafit text-[#b9bdbb] on-dark border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-12 grid md:grid-cols-3 gap-8 text-[0.95rem]">
+    <div>
+      <p class="font-display font-bold text-xl text-front tracking-tight">DREW<span class="text-dab-light">-PIT</span></p>
+      <p class="mt-2">Meble na wymiar z&nbsp;Weryni koło Kolbuszowej.</p>
+    </div>
+    <div>
+      <p class="text-front font-semibold">Kontakt</p>
+      <p class="mt-2"><a href="tel:691076335" class="hover:text-dab-light transition-colors">691 076 335</a><br>Werynia 431, 36-100 Kolbuszowa<br>Pn–Pt 8:00–16:00</p>
+    </div>
+    <div>
+      <p class="text-front font-semibold">Strona</p>
+      <p class="mt-2 flex flex-col gap-1">
+        <a href="index.html" class="hover:text-dab-light transition-colors w-fit">Strona główna</a>
+        <a href="index.html#realizacje" class="hover:text-dab-light transition-colors w-fit">Realizacje</a>
+        <a href="index.html#kontakt" class="hover:text-dab-light transition-colors w-fit">Kontakt</a>
+      </p>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <p class="max-w-7xl mx-auto px-5 md:px-8 py-5 text-sm">© <span id="year">2026</span> DREW-PIT, Werynia</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
